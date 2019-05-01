@@ -5,9 +5,9 @@
         <div class="card-header">
           <h3>Sign In</h3>
           <div class="d-flex justify-content-end social_icon">
-            <span><i class="fab fa-facebook-square"></i></span>
-            <span><i class="fab fa-google-plus-square"></i></span>
-            <span><i class="fab fa-twitter-square"></i></span>
+            <span><i class="fab fa-facebook"></i></span>
+            <span><i class="fab fa-google-plus"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
           </div>
         </div>
         <div class="card-body">
@@ -31,7 +31,12 @@
               <input type="checkbox" />Remember Me
             </div>
             <div class="form-group text-center mt-2">
-              <input (click)="onSubmit()" value="Login" class="btn login_btn" />
+              <!-- <input (click)="onSubmit()" value="Login" class="btn login_btn" /> -->
+              <button (click)="onSubmit()" *ngIf="!submitting" class="btn login_btn">Login</button>
+              <div *ngIf="submitting" class="lds-hourglass">
+
+
+              </div>
             </div>
           </form>
         </div>
@@ -40,7 +45,7 @@
             Don't have an account?<a [routerLink]="['/register']">Register</a>
           </div>
           <div class="d-flex justify-content-center">
-            <a href="#">Create by Weerayut</a>
+            <a href="#">Create by Vongbhan</a>
           </div>
         </div>
       </div>

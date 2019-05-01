@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import * as $ from "jquery";
 
 @Component({
   selector: "app-home",
@@ -7,6 +8,11 @@ import { Component, OnInit } from "@angular/core";
 })
 export class HomeComponent implements OnInit {
   constructor() {}
-
-  ngOnInit() {}
+  ngOnInit() {
+    $(document).ready(function() {
+      $("#sidebarCollapse").on("click", function() {
+        $("#sidebar").toggleClass("active");
+      });
+    });
+  }
 }

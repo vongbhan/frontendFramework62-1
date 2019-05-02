@@ -3,7 +3,7 @@ import { Observable } from "rxjs";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { tap } from "rxjs/operators";
 
-const authServiceUrl = "https://vongbhan.herokuapp.com/";
+const authServiceUrl = "https://backend-framework62.herokuapp.com/";
 
 const httpOptions = {
   headers: new HttpHeaders({

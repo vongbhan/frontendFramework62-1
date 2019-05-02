@@ -17,24 +17,41 @@
           <form [formGroup]="loginForm">
             <div class="input-group form-group">
               <div class="input-group-prepend">
-                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                <span class="input-group-text"
+                  ><i class="fas fa-user"></i
+                ></span>
               </div>
-              <input formControlName="username" type="text" class="form-control" placeholder="username" />
+              <input
+                formControlName="username"
+                type="text"
+                class="form-control"
+                placeholder="username"
+              />
             </div>
             <div class="input-group form-group">
               <div class="input-group-prepend">
                 <span class="input-group-text"><i class="fas fa-key"></i></span>
               </div>
-              <input formControlName="password" type="password" class="form-control" placeholder="password" />
+              <input
+                formControlName="password"
+                type="password"
+                class="form-control"
+                placeholder="password"
+              />
             </div>
             <div class="row align-items-center remember">
               <input type="checkbox" />Remember Me
             </div>
             <div class="form-group text-center mt-2">
               <!-- <input (click)="onSubmit()" value="Login" class="btn login_btn" /> -->
-              <button (click)="onSubmit()" *ngIf="!submitting" class="btn login_btn">Login</button>
-              <div *ngIf="submitting" class="lds-hourglass">
-              </div>
+              <button
+                (click)="onSubmit()"
+                *ngIf="!submitting"
+                class="btn login_btn"
+              >
+                Login
+              </button>
+              <div *ngIf="submitting" class="lds-hourglass"></div>
             </div>
           </form>
         </div>

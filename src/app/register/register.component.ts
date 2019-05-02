@@ -59,21 +59,21 @@ export class RegisterComponent implements OnInit {
               Swal.fire({
                 type: "success",
                 title: "สำเร็จ",
-                text: "Login success!"
+                text: "register success!"
               });
               this.router.navigate(["/home"]);
             } else {
               Swal.fire({
                 type: "error",
                 title: "แจ้งเตือน",
-                text: "Login fail!"
+                text: "register fail!"
               });
             }
           }
           this.submitting = false;
         });
     } else {
-      alert("เพิ่มข้อมูลไม่ครบ!"); // show mesage กรณีกรอกข้อมูลไม่ครบใน input
+      Swal.fire("เพิ่มข้อมูลไม่ครบ!"); // show mesage กรณีกรอกข้อมูลไม่ครบใน input
       this.submitting = false;
     }
   }

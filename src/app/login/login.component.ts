@@ -56,7 +56,7 @@ export class LoginComponent implements OnInit {
           this.submitting = false;
         });
     } else {
-      alert("เพิ่มข้อมูลไม่ครบ!"); // show mesage กรณีกรอกข้อมูลไม่ครบใน input
+      Swal.fire("เพิ่มข้อมูลไม่ครบ!"); // show mesage กรณีกรอกข้อมูลไม่ครบใน input
       this.submitting = false;
     }
   }

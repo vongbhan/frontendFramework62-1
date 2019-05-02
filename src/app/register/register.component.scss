@@ -62,9 +62,9 @@ body {
 
 .input-group-prepend span {
   width: 50px;
-  background-color: rgb(67, 54, 184);
+  background-color: rgb(90, 90, 90);
   color: black;
-  border: 0 !important;
+  border: 1 !important;
 }
 
 input:focus {
@@ -74,7 +74,7 @@ input:focus {
 }
 
 .remember {
-  color: white;
+  color: #00aeff;
 }
 
 .remember input {
